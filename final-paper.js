@@ -8,6 +8,22 @@ function totalFine( fare ) {
         return number;
      }
 
+ //problem 02
+ function  onlyCharacter(str) {
+          // You have to write your code here
+          if(typeof str !=="string"){
+            return "Invalid";
+          }
+          let newStr="";
+          for(const item of str){
+            if(!item.includes(" ")) {
+                 newStr+=item;
+            }
+           
+          }
+          return newStr.toUpperCase();        
+     }    
+
 //problem 03     
  function  bestTeam( player1, player2 ) {
           // You have to write your code here
@@ -28,6 +44,9 @@ function totalFine( fare ) {
             return "tie";
           }       
     }
+
+ //problem 04
+    
  
 //problem 05
 function  resultReport( marks ) {
