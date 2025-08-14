@@ -1,6 +1,6 @@
-//problem 01
-function totalFine( fare ) {
-        // You have to write your code here
+
+function totalFine(fare) {
+
         if(typeof fare !=="number" || fare<=0){
             return "Invalid";
         }
@@ -8,12 +8,12 @@ function totalFine( fare ) {
         return number;
      }
 
- //problem 02
+ 
  function  onlyCharacter(str) {
-          // You have to write your code here
           if(typeof str !=="string"){
             return "Invalid";
           }
+
           let newStr="";
           for(const item of str){
             if(!item.includes(" ")) {
@@ -21,12 +21,13 @@ function totalFine( fare ) {
             }
            
           }
-          return newStr.toUpperCase();        
+          const finalStr=newStr.toUpperCase();
+          return  finalStr;       
      }    
 
-//problem 03     
+    
  function  bestTeam( player1, player2 ) {
-          // You have to write your code here
+
           if(typeof player1 !=="object" || typeof player2 !=="object"){
             return "Invalid"
           }
@@ -41,17 +42,15 @@ function totalFine( fare ) {
             return player2.name;
           }
           else{
-            return "tie";
+            return "Tie";
           }       
     }
 
- //problem 04
+ 
  function  isSame(arr1 , arr2 ) {
-          // You have to write your code here
          if(!Array.isArray(arr1)||!Array.isArray(arr2)){
             return "Invalid";
          }
-
           if(arr1.length !==arr2.length){
             return false;
           }
@@ -68,9 +67,8 @@ function totalFine( fare ) {
              return true;       
      }   
  
-//problem 05
-function  resultReport( marks ) {
-          // You have to write your code here
+
+function  resultReport(marks) {
           if(!Array.isArray(marks)===true){
             return "Invalid";
           }

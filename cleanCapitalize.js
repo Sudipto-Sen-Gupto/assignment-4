@@ -11,8 +11,9 @@ function  onlyCharacter(str) {
             }
            
           }
-          return newStr.toUpperCase();        
-     }
+          const finalStr=newStr.toUpperCase();
+          return  finalStr;       
+     }   
 
-const result=onlyCharacter("Serv er : : Do wn")
+const result=onlyCharacter(10)
 console.log(result);

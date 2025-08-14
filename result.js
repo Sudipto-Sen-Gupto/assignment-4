@@ -1,6 +1,6 @@
 
-function  resultReport( marks ) {
-          // You have to write your code here
+
+function  resultReport(marks) {
           if(!Array.isArray(marks)===true){
             return "Invalid";
           }
@@ -26,7 +26,6 @@ function  resultReport( marks ) {
                  return {finalScore:average,pass:passCount,fail:failCount};
           }
    }
-
-const result=resultReport([]);
+const result=resultReport(100);
 console.log(result);
 

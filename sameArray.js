@@ -1,5 +1,6 @@
 
-function  isSame(arr1 , arr2 ) {
+//problem 04
+ function  isSame(arr1 , arr2 ) {
           // You have to write your code here
          if(!Array.isArray(arr1)||!Array.isArray(arr2)){
             return "Invalid";
@@ -19,6 +20,6 @@ function  isSame(arr1 , arr2 ) {
              }
             
              return true;       
-     }
-const result=isSame({data: [2 , 5 , 6] } , [2 , 5 , 6])
+     }   
+const result=isSame([1, undefined , 3] , [1,null ,3])
 console.log(result);
